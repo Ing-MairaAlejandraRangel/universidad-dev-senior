@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 1250px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.titulo-principal {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #dbeafe;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.form-card,
+.tabla-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  margin-bottom: 25px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-header h2,
+.tabla-titulo {
+  color: #1e293b;
+  font-size: 1.5rem;
+}
+
+.badge-edicion {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.input-group input {
+  padding: 13px 15px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  background-color: #f8fafc;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  background-color: #ffffff;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.botones {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 22px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-guardar {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+.btn-guardar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.4);
+}
+
+.btn-limpiar {
+  background: linear-gradient(135deg, #64748b, #475569);
+  color: white;
+  box-shadow: 0 6px 18px rgba(71, 85, 105, 0.3);
+}
+
+.btn-limpiar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(71, 85, 105, 0.35);
+}
+
+.tabla-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+thead {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+}
+
+th {
+  padding: 15px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+tbody tr {
+  background-color: #ffffff;
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #eff6ff;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-accion {
+  border: none;
+  padding: 9px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.btn-editar {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.btn-editar:hover {
+  transform: scale(1.05);
+}
+
+.btn-eliminar {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.btn-eliminar:hover {
+  transform: scale(1.05);
+}
+
+.sin-registros {
+  padding: 25px;
+  font-style: italic;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .titulo-principal {
+    font-size: 1.8rem;
+  }
+
+  .main-card {
+    padding: 18px;
+  }
+
+  .form-card,
+  .tabla-card {
+    padding: 18px;
+  }
+}

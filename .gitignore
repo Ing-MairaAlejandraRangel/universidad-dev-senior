@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Variables de entorno
+.env
+server/.env
+client/.env
+
+# Logs
+*.log
+
+# React
+client/build/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
