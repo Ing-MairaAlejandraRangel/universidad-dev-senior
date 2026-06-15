@@ -1,18 +1,28 @@
 # 🎓 Universidad Dev Senior
 
-Sistema web para la gestión de docentes desarrollado con React, Node.js, Express y MySQL.
+Sistema web Full Stack para la gestión de docentes desarrollado con **React**, **Node.js**, **Express** y **MySQL**.
 
 ---
 
-## 📋 Descripción
+## 📖 Descripción
 
-Universidad Dev Senior es una aplicación Full Stack que permite administrar información de docentes mediante operaciones CRUD (Crear, Consultar, Actualizar y Eliminar).
-
-El sistema está compuesto por un frontend desarrollado en React y un backend construido con Node.js y Express conectado a una base de datos MySQL.
+Universidad Dev Senior es una aplicación web orientada a la administración de docentes mediante operaciones CRUD (Crear, Consultar, Actualizar y Eliminar). El proyecto implementa una arquitectura cliente-servidor donde el frontend consume una API REST desarrollada con Node.js y Express, mientras que la información se almacena en una base de datos MySQL.
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## ✨ Características principales
+
+* Gestión completa de docentes (CRUD).
+* Interfaz desarrollada con React.
+* Backend con Node.js y Express.
+* Persistencia de datos en MySQL.
+* Comunicación mediante API REST.
+* Validación de formularios.
+* Separación entre frontend y backend.
+
+---
+
+## 🛠️ Tecnologías utilizadas
 
 ### Frontend
 
@@ -37,19 +47,31 @@ El sistema está compuesto por un frontend desarrollado en React y un backend co
 
 ---
 
-## ✨ Funcionalidades
+## 🏗️ Arquitectura del proyecto
 
-* Registrar docentes
-* Consultar docentes
-* Editar docentes
-* Eliminar docentes
-* Validación de formularios
-* API REST
-* Persistencia en MySQL
+```text
+UniversidadDevSenior/
+│
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── App.js
+│       ├── App.css
+│       └── index.js
+│
+├── server/
+│   ├── index.js
+│   ├── db.js
+│   ├── package.json
+│   └── ...
+│
+├── screenshots/
+└── README.md
+```
 
 ---
 
-## 📷 Capturas
+## 📸 Capturas
 
 ### Página principal
 
@@ -65,34 +87,35 @@ El sistema está compuesto por un frontend desarrollado en React y un backend co
 
 ### Base de datos
 
-![BD](screenshots/database.png)
+![Base de datos](screenshots/database.png)
 
 ---
 
-## 📂 Arquitectura
+## 🗄️ Base de datos
 
-Frontend React
-
-```text
-client/
-├── src/
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-```
-
-Backend Node.js
-
-```text
-server/
-├── db.js
-├── index.js
-└── package.json
-```
+El proyecto utiliza **MySQL** para almacenar la información de los docentes y soportar las operaciones CRUD realizadas desde la aplicación.
 
 ---
 
-## ⚙️ Instalación
+## 🔗 API REST
+
+| Método | Endpoint         | Descripción          |
+| ------ | ---------------- | -------------------- |
+| GET    | `/docentes`      | Listar docentes      |
+| GET    | `/docentes/{id}` | Consultar un docente |
+| POST   | `/docentes`      | Crear docente        |
+| PUT    | `/docentes/{id}` | Actualizar docente   |
+| DELETE | `/docentes/{id}` | Eliminar docente     |
+
+---
+
+## 🚀 Instalación
+
+### Requisitos previos
+
+* Node.js
+* npm
+* MySQL
 
 ### Frontend
 
@@ -112,22 +135,23 @@ npm run dev
 
 ---
 
-## 🌐 API REST
+## ✅ Estado del proyecto
 
-| Método | Endpoint       | Descripción        |
-| ------ | -------------- | ------------------ |
-| GET    | /docentes      | Listar docentes    |
-| GET    | /docentes/{id} | Buscar docente     |
-| POST   | /docentes      | Crear docente      |
-| PUT    | /docentes/{id} | Actualizar docente |
-| DELETE | /docentes/{id} | Eliminar docente   |
+Proyecto funcional y probado para fines académicos y de portafolio profesional.
+
+Incluye:
+
+* ✔ Gestión de docentes
+* ✔ API REST
+* ✔ Persistencia en MySQL
+* ✔ Frontend en React
+* ✔ Backend en Node.js y Express
 
 ---
 
 ## 👩‍💻 Autora
 
-Maira Alejandra Rangel Murillo
-
+**Maira Alejandra Rangel Murillo**
 Ingeniera de Sistemas
 
-Bogotá D.C. – Colombia
+Proyecto desarrollado con fines académicos y como parte de un portafolio profesional orientado al desarrollo Full Stack.
