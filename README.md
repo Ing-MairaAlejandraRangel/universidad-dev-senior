@@ -1,6 +1,6 @@
 # 🎓 Universidad Dev Senior
 
-Sistema web Full Stack para la gestión de docentes desarrollado con **React**, **Node.js**, **Express** y **MySQL**.
+> Proyecto Full Stack desarrollado con React, Node.js, Express y MySQL para la gestión de docentes mediante operaciones CRUD y una API REST.
 
 ---
 
